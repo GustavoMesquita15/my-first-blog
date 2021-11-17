@@ -1,26 +1,153 @@
 {% load static %}
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-    {% if user.is_authenticated %}
-     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-{% endif %}
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
-                </div>
-            </div>
-        </div>
-    </body>
+<head>
+    <title>CV Gustavo Mesquita Ferreira</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    
+</head>
+<body>
+	<!-- Navegação -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo"></span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introdução -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Olá, sou o Gustavo Mesquita Ferreira</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+				</div>
+				<div class="unit-80">
+					<h1>Resumo da Experiência<br><span id="typed"></span></h1>
+				</div>
+				<p style="text-align: justify;">
+				Atualmente estudante do curso superior em análise e desenvolvimento de sistemas, estou no 3° semestre. Estagiário na empresa Nosso Leilão atuando tanto na parte de suporte e programação. Perfil analítico, inovador, trabalho bem em grupo, sempre em busca de capacitação e novos conhecimentos.  
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Experiência Profissional -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Experiência<br>Profissional</h1>
+			<ul class="work-list">
+				<li>2021-atualmente</li>
+				<li><a href="#">Nosso Leilão</a></li>
+                <li> 
+                    <p style='text-align: justify;'>
+                    Estagiário t.i
+                    - Prestar suporte nos equipamentos
+                    - Programação no sistema   
+                    </p> 
+                </li>
+			</ul>
+			<ul class="work-list">
+				<li>2021-2021</li>
+				<li><a href="#">Play Seguros</a></li>
+				<p style='text-align: justify;'>
+                <li>
+                    <p style='text-align: justify;'>
+                    Estagiário t.i
+                    - Auxiliar no processo de configuração de e-mails (IMAP ou POP3).
+                    - Instalar e configurar layouts de páginas de websites utilizando WordPress.
+                    - Formatar computadores, reinstalar o Windows 10 e instalar o pacote Office.
+                    - Prestar suporte remoto via AnyDesk ou TeamViewer aos colaboradores da
+                    empresa.
+                    </p>
+                </li>
+                </p>
+			</ul>
+			<ul class="work-list">
+				<li>2019-2019</li>
+				<li><a href="#">Tatu Bola Jardins</a></li>
+				<li>
+                    <p style='text-align: justify;'>
+                    Jovem Aprendiz 
+                    - Auxilio na parte administrativa.
+                    - Recebimento e conferência de mercadorias.
+                    - Atendimento telefônico e mídias sócias com clientes.
+                    - Lançamento de notas fiscais.
+                    - Responsável pela montagem de proposta de eventos.
+                    </p>
+                </li>
+                </ul>
+                <ul class="work-list">
+                    <li>2015-2016</li>
+                    <li><a href="#">WMF Solutions</a></li>
+                    <li>
+                        <p style='text-align: justify;'>
+                        Jovem Aprendiz 
+                    - Atendimento telefônico e presencial com clientes.
+                    - Controle de arquivos.
+                    - Elaboração de planilhas e relatórios gerais.
+                    - Suporte a gestão.
+                    - Controle de entrada e saída de certificados da norma ISO 9001.
+                    - Checagem de databooks.
+                    - Atualização dos lotes e números das peças.
+                    </p>
+                    </li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Cursos Complementar -->
+	<div class="award section second" id="achievements">
+		<div class="container">
+			<h1>Cursos<br>Complementares</h1>
+			<ul class="award-list list-flat">
+				<li>
+                    Dezembro 2019</li>
+				<li>Cerficado Java iniciante ao avançado - udemy</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>Dezembro 2019</li>
+				<li>Scrum básico - udemy</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>Março 2020</li>
+				<li>Cerficicado linguagem C iniciante ao avançado - udemy</li>
+			</ul>
+            <ul class="award-list list-flat">
+				<li>Março 2020</li>
+				<li>Devops básico - udemy</li>
+            </ul>
+            <ul class="award-list list-flat">
+            <li>Março 2020</li>
+            <li>Hmtl e css básico ao intermediário - udemy</li> 
+		</div>
+	</div>
+
+	<!-- Habilidades técnicas -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Habilidades<br>Técnicas</h1>
+			<ul class="skill-list list-flat">
+				<li>Desenvolvimento Web</li>
+				<li>HTML / CSS / Java / Javascript / Python</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Banco De Dados</li>
+				<li>MySQL / Oracle </li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Framework</li>
+				<li>Django / Nodejs / React</li>
+			</ul>
+		</div>
+	</div>
+</body>
 </html>
