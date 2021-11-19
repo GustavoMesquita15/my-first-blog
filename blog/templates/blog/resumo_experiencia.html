@@ -1,0 +1,38 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+
+	{%block content%}
+	<!-- Navegação -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo"></span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introdução -->
+	{%for item in dados%}
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>{{item.titulo}}</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+				</div>
+				<div class="unit-80">
+					<h1>{{item.subtitulo}}<br><span id="typed"></span></h1>
+				</div>
+				<p style="text-align: justify;">
+				 {{item.texto}}
+				</p>
+			</div>
+		</div>
+	</div>
+	{%endfor%}
+
+{%endblock%}

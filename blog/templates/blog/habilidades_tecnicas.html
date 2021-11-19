@@ -1,0 +1,32 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+
+	{%block content%}
+	<!-- Navegação -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo"></span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				</nav>
+			</header>
+		</div>
+	</div>
+	<!-- Habilidades técnicas -->
+	
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Habilidades<br>Técnicas</h1>
+		{%for item in dados%}
+			<ul class="skill-list list-flat">
+				<li>{{item.nome}}</li>
+				<li>{{item.texto}}</li>
+			</ul>
+		{%endfor%}
+		</div>
+	</div>
+	   
+{%endblock%}

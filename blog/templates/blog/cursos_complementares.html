@@ -1,0 +1,34 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+
+	{%block content%}
+	<!-- Navegação -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo"></span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				</nav>
+			</header>
+		</div>
+	</div>
+    <!-- Cursos Complementar -->
+	
+	<div class="award section second" id="achievements">
+		<div class="container">
+			<h1>Cursos Complementares</h1>
+			{%for item in dados%}
+			<ul class="award-list list-flat">
+				
+				<li>{{item.texto}}</li>
+			</ul>
+			
+			</ul>
+			{%endfor%}
+		</div>
+	</div>
+	
+{%endblock%}
